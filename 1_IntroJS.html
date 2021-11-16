@@ -29,14 +29,53 @@
 	<div id="box2"> </div>
 	<div id="box3"> </div>
 	
-	
-	
+	<!------------- All JS Must go into script tages at the end of the boy-------->
 	
 	<script>
 	
-	
-	
-	
+	/*step1 simple variable*/
+var num1=20;
+var num2=30;
+console.log(" My number is "+num1);
+		
+var score=num1+num2;
+console.log("your score is "+ score)
+		
+	/*step 2 make a pointer to something on the page, put score variable into it*/
+		
+// target div on page
+		
+var box1 = document.getElementById('box1');
+
+		
+// change the HTML within that div
+box1.innerHTML = score;
+box1.innerHTML = score;
+	/* Pointer fill with content and change style*/
+		
+var box2 = document.getElementById('box2');
+		
+//put other text in box2
+		
+box2.innerHTML = "I LOVE JAVASCRIPT"; 
+
+// change CSS of box2
+box2.style.color="#DD60FF";	
+box2.style.fontSize="30pt"
+box2.style.backgroundColor="black"
+
+/* Step 3 simple logic */
+
+var box3=document.getElementById('box3');		
+		
+// a single equals = assigns 
+// a double equals == testing to see if two things equal
+		
+var name = "Hayden";
+		
+if(name=="Hayden")
+
+		
 	</script>
 </body>
 </html>
