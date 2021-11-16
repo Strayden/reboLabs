@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@600&display=swap');
+
+header{ 
+	text-align: center;
+	font-size: 40px;
+	background-image: url( "../images/sign2.jpg");
+	padding: 10%;
+	background-size:cover;
+	background-position: center;
+	color: #000000; 
+	font-family: 'Public Sans', sans-serif;}
+
+.flex-conainer3{display:flex;
+/*			flex-direction: row;*/
+			align-items: center;
+	justify-content: center;
+	padding-bottom: 12%;}
+
+.flex-container3 div{
+			display: flex;
+/*		flex-direction: column;*/
+	align-content: center;}
+
+
+
+p{background-color:white;
+	border-style: solid;
+	padding: 5%;
+	margin: 6%;}
+
+
+body{ background-color: #5E5C5C;
+	  margin:0}
+
+
+.flex-conainer{ 
+
+	display:flex;
+			flex-direction: row;
+			align-items: stretch;
+		
+}
+	.flex-container div{
+			display: flex;
+		flex-direction: column;}
+
+/*row 1*/
+
+#item1 {
+			flex: 50%;
+			display: flex;	
+			margin: 20px 40px;
+			justify-content: center;
+			align-items: center;
+		
+}
+			
+
+
+/*#item1 img{ width: 20%; }*/
+
+		#item2{
+			display:flex;
+			flex: 50%;
+			align-items: center;
+			justify-contet:center;
+			max-width: 30%;
+			padding-left: 12%;
+			
+		
+		
+			
+			
+		}
+
+/*row 2 */
+.flex-conainer2{ 
+
+	display:flex;
+			flex-direction: row;
+	align-items: stretch;}
+	
+.flex-container2 div{
+			display:flex;
+			align-items:center;
+			padding:20px;
+	flex-direction: column;
+		}
+
+#item3{flex: 50%;
+			display: flex;	
+			margin: 30px 60px;
+			justify-content: center;
+/*			padding: 10px;*/
+			align-items: center;}
+
+#item4{flex: 50%;
+			display: flex;	
+			margin: 30px 60px;
+			justify-content: center;
+/*			padding: 10px;*/
+			align-items: center;}
+
+/*#item4 img{ width: 20%; }*/
+
+/**********NAV BAR**************/
+
+
+ul{
+	margin: 0;
+	padding:0;
+	overflow: hidden;
+	background-color: #1E1E1E;
+	list-style: none;
+}
+
+li{float:left;}
+
+
+li a{ display:block;
+	color:white;
+text-align:center;
+padding: 24px 128px;}
+
+li a:hover{ background-color: black;
+			color:white;
+			}
+
+nav{ position:sticky}
+
+
+
+.btn{ background-color: #1E1E1E;
+	border:thick;
+	border-color:black;
+	font-size: 20px;
+	width: 100%;
+	color:#DFF0FF;
+	padding: 2%;
+
+		
+				}
+.btn:hover {
+	background-color: black;
+	color: white;
+}
+
+.flex-conainer4{ 
+
+	display:flex;
+			flex-direction: row;
+	align-items: center;}
+	
+.flex-container4 div{
+			display:flex;
+			align-items:center;
+			padding:20px;
+	flex-direction: column;
+		}
+
+footer{ text-align: center;
+		
+	
+}
+
+
+
