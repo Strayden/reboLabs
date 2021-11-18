@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* my google fonts - when it's an external font*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+body{
+	/*Remove default spacing*/
+	margin: 0; 
+	padding: 0; 
+	
+	/*set a background colour*/
+	background:#622819; 
+	
+	/*set a default font family*/
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+
+h1{
+	/*set a fint for headings*/
+	font-family:'Press Start 2P', cursive;
+	font-size: 2.5em;/*1 em = 16 px(default size) so 2.5em= 40px*/
+}
+
+
+#header{
+	margin: 0;
+	/*space inside the div*/
+	padding: 100px;
+	
+	/*set a background image*/
+	background-image: url("../images/backgrounds/lights.png");
+	/*set the background image to cover the whole div*/
+background-size: cover; 
+}
+
+#subHead{
+	/*space inside the div*/
+	padding: 100px;
+	
+	/*set margin top and bottom to 0 and auto centered*/
+	margin: 0 auto;
+	/*set a background image*/
+	background-image:url("../images/backgrounds/spring.jpg");
+	/*set the background image to cover the whole div*/
+	background-size: cover;
+	/*make it so the background image doesn't scroll with the page*/
+	background-attachment: fixed;
+	
+	box-sizing: border-box;
+	/*set css to look at entire element (padding included) to set size*/
+	max-width: 960px;
+	/*set a maximum width of 960px*/
+
+}
+
+.sect{
+	
+	background: #FFFFFF; 
+	margin: 0 auto; 
+	padding: 20px; 
+	
+	/*set css to look at entire element (padding included) to set size*/
+	
+	/*set a maximum width of 960px*/
+	max-width: 960px;
+}
+
+/*psuedo-classes for the links (with rollovers)*/
+a:link, a:visited{
+	
+	text-decoration: grey;
+}
+a:hover{
+	color:red; 
+	text-decoration: underline;
+}
+a:active{
+	color: orangered;
+}
+
+/*------------------------navBar -------------------*/
+
+ul {
+	/*removes the dots from the list items*/
+	/*removes defult lists indentations*/
+	
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+	/*makes bargo full width*/
+  overflow: hidden;
+	/*background color behind lists*/
+	background-color: #333;}
+	
+
+li {
+	/*puts the lists to the left of the page*/
+  float: left;
+}
+
+li a {
+	/*makes all links a box*/
+  display: block;
+  color: white;
+	/*centers texts*/
+  text-align: center;
+	/* adds spacing on words*/
+  padding: 14px 16px;
+	/*removes underline from links*/
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+	color:#B86B37
+}
+
+nav {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+  
+
+
+
+/*----------------------------image gallery-----------------*/
+
+div.gallery {
+  margin: 5px;
+  border: 5px solid #ccc;
+  float: left;
+  width: 22%;
+}
+
+div.gallery:hover {
+  border: 5px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.clearIt{ 
+clar:both;}
+/*---------------------------Tables------------------------*/
+
+#customers {
+/*  font-family: Arial, Helvetica, sans-serif;*/
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #680001;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #AF9100;}
+
+#customers tr:hover {background-color: #B65300;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #922A00;
+  color: white;
+}

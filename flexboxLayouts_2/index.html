@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flexbox</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Akronim&family=Roboto:ital,wght@0,100;0,400;1,700&display=swap" rel="stylesheet">
+
+	<!--tag to check device size, needed for media quirees-->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+	<style>
+				
+		body{
+			font-family: 'Roboto', sans-serif;
+			margin: 0;
+		}
+		
+		
+		header{
+		background-color: firebrick;
+			color: white;
+			background-image: url("images/moon.jpg");
+			background-size: cover; 
+			background-attachment: fixed;
+			background-position: center;
+			height:50vh;
+			display:flex;
+			align-items: center;
+			justify-content: center;
+		
+			}
+		
+		header h1{
+			font-size: 50px;
+			font-family: 'Akronim', cursive;
+		}
+	
+	.flex-container	{ 
+			display: flex;
+		align-items: stretch;
+		
+		}
+		
+		.flex-container div{
+			background-color: aqua;
+			margin: 10px;
+			padding: 10px;
+			
+		}
+		
+		#item1{
+			
+			flex:25%;
+			
+		}
+		
+		#item1 img{
+			width:100%;
+			
+		}
+		
+		
+		
+		#item2{
+			flex:10%;
+		}
+		
+		#item3{
+			flex:25%;
+		}
+		
+		.btn{
+			background-color: #FF6C35;
+			border: none;
+			padding: 20px 10px;
+			font-size: 12px;
+			width: 50%
+		}
+		
+		.btn:hover{
+			background-color: #952901;
+			color: white;
+		}
+		
+		#item4{
+			flex:20%;
+		}
+		
+		#item5{
+			flex:20%;
+			
+		}
+		/****************************** footer */
+		
+		#item6{
+		 flex: 25%;
+			background-color: transparent;
+		}
+		
+		#item7 {
+			flex: 50%;
+			background-color: transparent;
+			
+		}
+		
+		#item8 {
+			flex: 25%;
+			background-color: transparent;
+		} 
+		
+		#item9{
+			flex: 25%
+		}
+		
+		#item10{
+			flex: 25%;
+		}
+		
+		#item10 img{
+			width: 100%;
+		}
+		
+		#item11{
+			flex: 25%;
+		}
+		
+		#item12{
+			flex: 25%;
+		}
+		
+		
+		
+		Footer{
+			background-color: black;
+			padding: 20px 0px;
+			color: orange;
+			text-align:center;
+			
+		}
+		
+		/************** media query to change the style of phones*****************/
+		
+		@media (max-width:800px) {
+			
+			.flex-container {
+				flex-direction: column;
+				
+			}
+		}
+		
+	</style>
+	
+	
+</head>
+
+<body>
+	
+	<header>
+		
+		<h1>The Page Heading</h1>
+	</header>
+	
+	
+	
+	<div class="flex-container">
+		
+		<div id="item1">
+			<img src="images/person.jpg" alt= "creep">
+		</div>
+		
+		
+		
+		<div id="item2">
+		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ab officia explicabo est animi a impedit eligendi quasi ea sunt minima quis, cumque sit asperiores aliquam, dolorem ad aperiam. Temporibus alias perferendis in dignissimos earum praesentium, expedita ducimus consequatur quae? Repellat nam tempore a, optio inventore, rerum quibusdam dignissimos voluptate architecto quasi ipsum facere, molestiae dolores quisquam minima dolore eligendi excepturi. Libero deserunt, quod, nostrum magnam consectetur quis illo. Iste vero similique, libero recusandae vitae quisquam atque, quos reiciendis laudantium, repudiandae ex debitis unde ab obcaecati. Velit totam, nisi obcaecati, ad optio maxime, numquam praesentium ipsa molestiae aliquam distinctio quidem.</p>
+		
+		
+		</div>
+		
+		
+		
+		
+		
+		
+		<div id="item3">		
+	<p>
+	<button CLASS="btn"> CLICK HERE </button>
+	</p>
+			<p>
+			<button CLASS="btn"> CLICK HERE TOO </button>
+			</p>
+		</div>
+		
+	</div> 
+	
+	
+	
+	
+	
+	
+	
+	<div class="flex-container">
+		<div id="item4">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur est similique, deleniti id repellendus incidunt voluptates a minima sunt, porro ea saepe minus exercitationem voluptas numquam dicta necessitatibus odio laborum deserunt culpa maxime! Dignissimos culpa reiciendis tenetur quod, minima mollitia!</p>
+		</div>
+		
+		<div id="item5">
+		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa odio assumenda eveniet aliquid atque nostrum odit natus voluptatem numquam, totam, obcaecati quis officia, reiciendis quisquam est doloremque. Tenetur, dolores expedita, ea illo nulla eos incidunt! Magni possimus consectetur ut officia!</p>
+		</div>
+		
+	</div>
+	
+	<div class="flex-container">
+		 
+	<div id="item9"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laboriosam quibusdam voluptates repellat ullam quasi consequuntur minima ut explicabo, dolorem deleniti, exercitationem fuga, tempora impedit ratione et hic culpa! Quos animi quae architecto reprehenderit sint, vitae, voluptatibus tenetur voluptate impedit nisi, optio odit. Numquam fugit, accusantium assumenda dignissimos accusamus, cum non cumque impedit perspiciatis eum est molestiae beatae eos. Expedita saepe quia omnis, facilis explicabo! Cum voluptatum culpa illo nihil, repudiandae porro molestias, incidunt fugiat fuga quisquam harum et aut dicta, ut id neque fugit, eligendi alias dolorem magnam! Repellat fugiat dicta voluptas nulla, modi?</div>
+		
+		
+	<div id="item10">
+		<img src="images/pexels-ready-rey-6465130.jpg" alt="tree in water">
+	</div>
+		
+		
+	<div id="item11">
+		
+		<p><button class="btn">  Virus</button> </p>
+		<p> <button class="btn"> Not A Virus</button> </p>
+		<p> <button class="btn"> Definitly Not A Virus</button> </p>
+	</div>
+		
+		
+	<div id="item12">
+		
+		
+		<ul>
+		<li> Winds howling</li>
+		<li> the leaves are falling</li>
+		<li> all i can hear</li>
+		<li> is the Windigo Calling</li>
+		
+		
+		
+		</ul>
+		
+		</div>
+	
+	</div>
+	
+	
+	<footer>
+		
+	<div class="flex-container">
+		
+		
+		<div id="item6"></div>
+		
+		<div id="item7">
+			<p> Created by Hayden</p>
+			<p> &copy; 2021 </p>
+		
+		
+		</div>
+		
+		<div id="item8"></div>
+		
+	</div> 
+	
+	
+</footer>
+	
+</body>
+</html>
