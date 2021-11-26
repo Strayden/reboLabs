@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mad Lib</title>
+</head>
+
+<body>
+	<h1> Help Build a Madlib</h1>
+	
+	
+	
+	<form action="javascript:write();"> 
+	<p>
+			
+			<label for="place">Choose a Place:</label>
+			<select id="place" name="place">
+				<option value="disneyLand">Disney Land</option>
+				<option value="amazonRainforest"> The Amazon Rainforest</option>
+				<option value="lakeLochNess">Lake Loch Ness</option>
+				<option value="eiffelTower"> The Eiffel Tower</option>
+				<option value="vimmyRidge"> Vimmy Ridge</option>
+				<option value="whitehouse"> The White house</option>
+			</select> 
+		</p> 
+	
+	<p> 
+		<label for="ani">Animal:</label>
+			<input type="text" id="ani" name="ani" required ></p>
+	<p>
+	<label for="time1">Time ex. 4:30 :</label>
+			<input type="text" id="time1" name="time1" required ></p>
+	
+	
+		<p><label for="Verb1">Verb:</label>
+			<input type="text" id="Verb1" name="Verb1" required ></p>
+	
+		<p> <label for="MS">Measurment of speed:</label>
+	<input type="text" id="MS" name="MS" required > </p>
+	
+
+	
+	<p> <label for="Direc">Choose a direction:</label>
+			<select id="Direc" name="Direc">
+				<option value="N">North</option>
+				<option value="S"> South</option>
+				<option value="E">East</option>
+				<option value="W">West</option>
+				<option value="NE">North East</option>
+				<option value="NW">North West</option>
+				<option value="SW">South West</option>
+				<option value="SE">South East</option>
+			</select> </p>
+	
+	
+	
+	<p> <label for="country">Country:</label>
+			<input type="text" id="country" name="country" required > </p>
+	 
+	<p> <label for="year">Past Year:</label>
+			<input type="text" id="year" name="year" required > </p>
+	
+	<p> <label for="name">Name:</label>
+			<input type="text" id="name" name="name" required > </p>
+	 
+	<p> <label for="numb2">Number:</label>
+			<input type="text" id="numb2" name="numb2" required > </p>
+	 
+	<p> <label for="SP">State/Province:</label>
+			<input type="text" id="SP" name="SP" required > </p>
+	
+	<p> <label for="adj">Adjective:</label>
+			<input type="text" id="adj" name="adj" required > </p>
+	
+ 	<p> <label for="name2">Name:</label>
+			<input type="text" id="name2" name="name2" required > </p>
+	
+	<p> <label for="numb3">Number:</label>
+			<input type="text" id="numb3" name="numb3" required > </p>
+		
+		<p> <label for="noun">Noun:</label>
+			<input type="text" id="noun" name="noun" required > </p>
+	
+	<p> <label for="verb2">Verb:</label>
+			<input type="text" id="verb2" name="verb2" required > </p>
+	
+	<p> <label for="numb4">Number:</label>
+			<input type="text" id="numb4" name="numb4" required > </p>
+	
+	<p> <label for="name3">Name:</label>
+			<input type="text" id="name3" name="name3" required > </p>
+	
+	<p> <label for="frac">Fraction:</label>
+			<input type="text" id="frac" name="frac" required > </p>
+	
+	<p> <label for="cell">Phone number:</label>
+			<input type="text" id="cell" name="cell" required > </p>
+	
+	
+	<p> <label for="numb5">Number:</label>
+			<input type="text" id="numb5" name="numb5" required > </p>
+	
+		<p> <label for="numb6">Number:</label>
+			<input type="text" id="numb6" name="numb6" required > </p>
+		
+		<p><input type="submit" value="Submit"></p>
+		
+	</form>
+	
+	<div id="output"> Fill in the blanks to make a story </div>
+	
+	<script>
+		
+	function write(){
+		
+		
+			
+		console.log("it works");
+		// Var statements
+		var place= document.getElementById('place').value;
+		console.log(place);
+		
+		var ani= document.getElementById('ani').value;
+		console.log(ani);
+		
+		var time1= document.getElementById('time1').value;
+		console.log(time1);
+		
+		var Verb1= document.getElementById('Verb1').value;
+		console.log(Verb1);
+		
+		var MS= document.getElementById('MS').value;
+		console.log(MS);
+		
+		var Direc= document.getElementById('Direc').value;
+		console.log(Direc);
+		
+		var country= document.getElementById('country').value;
+		console.log(country);
+		
+		var year= document.getElementById('year').value;
+		console.log(year);
+
+		var name= document.getElementById('name').value;
+		console.log(name);
+		
+		var numb2= document.getElementById('numb2').value;
+		console.log(numb2);
+		
+		var SP= document.getElementById('SP').value;
+		console.log(SP);
+		
+		var adj= document.getElementById('adj').value;
+		console.log(adj);
+		
+
+		var name2= document.getElementById('name2').value;
+		console.log(name2);
+		
+		var numb3= document.getElementById('numb3').value;
+		console.log(numb3);
+		
+		var noun= document.getElementById('noun').value;
+		console.log(noun);
+		
+		var verb2= document.getElementById('verb2').value;
+		console.log(verb2);
+		
+		var numb4= document.getElementById('numb4').value;
+		console.log(numb4);
+		
+		var name3= document.getElementById('name3').value;
+		console.log(name3);
+		
+		var name2= document.getElementById('name2').value;
+		console.log(name2);
+		
+		var frac= document.getElementById('frac').value;
+		console.log(frac);
+		
+		var cell= document.getElementById('cell').value;
+		console.log(cell);
+		
+		var numb5= document.getElementById('numb5').value;
+		console.log(numb5);
+		
+		var numb6= document.getElementById('numb6').value;
+		console.log(numb6);
+		
+		if(place=="disneyLand")
+			place="<img src='disney.jpg' alt='disneyland'> <br>";
+		// actual MadLib
+		
+		
+		
+		
+		document.getElementById('output').innerHTML+=" So, you want to go on vacation to "+place+" When traveling here you need to remember to be on the look out for "+ani+" since they infest the area. Just make sure to not go out after "+time1+" because that’s when they attack. Just know that if you visit here you can’t out "+Verb1+" them, with their top speed at "+MS+" your only option is to hide and hope they don’t spot you. If you can’t hide your best bet is to fight. So, grab your nearest "+noun+" and "+verb2+" it over to the creature. If that doesn’t work try to climb the nearest tree since everybody knows that "+ani+"s can’t climb, just wait until it gets bored and goes away. Once it leaves make sure to check "+Direc+" to see if any more are on there way. Once your vacation is over and you’re heading back home to "+country+" make sure to check your luggage. we don’t want another incident like what happed back in "+year+" when "+name+" came back home after visiting "+place+" and brought back "+numb2+" "+ani+" to "+SP+". After all that did send us into a worldwide shut down until they were all taken care of. <br> If you do happen to accidently bring those "+adj+" beasts to your home country here’s what, you’ll need to do to solve it. Just know that traditional means of aren’t going to do the trick you’ll have to call "+name2+" the exterminator they’re the key to your survival. They have been trained for "+numb3+" years waiting for this exact moment. They will absolutely "+verb2+" the poor poor vermin that tried to make it into your home country. to contact the exterminator you’ll have to spell their name in a smoke signal. <br> Keep in mind that these vermin are pests because they can also mitotically divide within "+numb4+" hours meaning that if you loose one of them, they will flood and disturb the natural order of "+place+". If this happens the exterminator won’t be enough, you’ll have to call "+name3+" the destroyer of blood lines. They’ve only been training for "+frac+" of the time the exterminator has, but this means nothing to the destroyer as their power is greater than the exterminator. To get a hold of them call  "+cell+" and they’ll be over with in "+numb5+" to "+numb6+" seconds to take care of the problems. Just be safe on your travels and good luck.";
+		
+		
+		}
+		
+	</script>
+</body>
+</html>
