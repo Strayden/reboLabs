@@ -3,6 +3,35 @@
 <head>
 <meta charset="utf-8">
 <title>Mad Lib</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Indie+Flower&display=swap" rel="stylesheet">
+	
+	
+	<style>
+	
+		body{ background-color: #74CDD6;
+			  color: #0F0BF1;
+				font-family: 'Comfortaa', cursive;
+				 
+			
+		}
+		h1{align-content: center;
+			text-align: center;
+			font-family: 'Indie Flower', cursive;
+		font-size: 60px}
+	
+		div{text-align: center;
+			padding: 2px;
+		font-family: 'Comfortaa', cursive;}
+		
+	
+	
+		
+		
+	</style>
+	
 </head>
 
 <body>
@@ -16,10 +45,10 @@
 			<label for="place">Choose a Place:</label>
 			<select id="place" name="place">
 				<option value="disneyLand">Disney Land</option>
-				<option value="amazonRainforest"> The Amazon Rainforest</option>
+				<option value="amazon"> The Amazon Rainforest</option>
 				<option value="lakeLochNess">Lake Loch Ness</option>
 				<option value="eiffelTower"> The Eiffel Tower</option>
-				<option value="vimmyRidge"> Vimmy Ridge</option>
+				<option value="vimyRidge"> Vimy Ridge</option>
 				<option value="whitehouse"> The White house</option>
 			</select> 
 		</p> 
@@ -188,13 +217,34 @@
 		console.log(numb6);
 		
 		if(place=="disneyLand")
-			place="<img src='disney.jpg' alt='disneyland'> <br>";
+			placemessage="<img src='disney.jpg' alt='disneyland'>";
+		
+		if(place=="amazon")
+			placemessage="<img src='amazon.jpg' alt='amazon'>";
+		
+			if(place=="lakeLochNess")
+			placemessage="<img src='lake.jpg' alt='lakeLochNess'>";
+		
+		if(place=="eiffelTower")
+			placemessage="<img src='tower.jpg' alt='eiffelTower'>";
+		
+		if(place=="vimyRidge")
+			placemessage="<img src='vimy.jpg' alt='vimyRidge'>";
+		
+		if(place=="whitehouse")
+			placemessage="<img src='house.jpg' alt='whitehouse'>";
+		
+		
+		
+		
 		// actual MadLib
 		
 		
 		
 		
-		document.getElementById('output').innerHTML+=" So, you want to go on vacation to "+place+" When traveling here you need to remember to be on the look out for "+ani+" since they infest the area. Just make sure to not go out after "+time1+" because that’s when they attack. Just know that if you visit here you can’t out "+Verb1+" them, with their top speed at "+MS+" your only option is to hide and hope they don’t spot you. If you can’t hide your best bet is to fight. So, grab your nearest "+noun+" and "+verb2+" it over to the creature. If that doesn’t work try to climb the nearest tree since everybody knows that "+ani+"s can’t climb, just wait until it gets bored and goes away. Once it leaves make sure to check "+Direc+" to see if any more are on there way. Once your vacation is over and you’re heading back home to "+country+" make sure to check your luggage. we don’t want another incident like what happed back in "+year+" when "+name+" came back home after visiting "+place+" and brought back "+numb2+" "+ani+" to "+SP+". After all that did send us into a worldwide shut down until they were all taken care of. <br> If you do happen to accidently bring those "+adj+" beasts to your home country here’s what, you’ll need to do to solve it. Just know that traditional means of aren’t going to do the trick you’ll have to call "+name2+" the exterminator they’re the key to your survival. They have been trained for "+numb3+" years waiting for this exact moment. They will absolutely "+verb2+" the poor poor vermin that tried to make it into your home country. to contact the exterminator you’ll have to spell their name in a smoke signal. <br> Keep in mind that these vermin are pests because they can also mitotically divide within "+numb4+" hours meaning that if you loose one of them, they will flood and disturb the natural order of "+place+". If this happens the exterminator won’t be enough, you’ll have to call "+name3+" the destroyer of blood lines. They’ve only been training for "+frac+" of the time the exterminator has, but this means nothing to the destroyer as their power is greater than the exterminator. To get a hold of them call  "+cell+" and they’ll be over with in "+numb5+" to "+numb6+" seconds to take care of the problems. Just be safe on your travels and good luck.";
+		document.getElementById('output').innerHTML=" <p> So, you want to go on vacation to "+place+" When traveling here you need to remember to be on the look out for "+ani+" since they infest the area. Just make sure to not go out after "+time1+" because that’s when they attack. Just know that if you visit here you can’t out "+Verb1+" them, with their top speed at "+MS+" your only option is to hide and hope they don’t spot you. If you can’t hide your best bet is to fight. So, grab your nearest "+noun+" and "+verb2+" it over to the creature. If that doesn’t work try to climb the nearest tree since everybody knows that "+ani+"s can’t climb, just wait until it gets bored and goes away. Once it leaves make sure to check "+Direc+" to see if any more are on there way. Once your vacation is over and you’re heading back home to "+country+" make sure to check your luggage. we don’t want another incident like what happed back in "+year+" when "+name+" came back home after visiting "+place+" and brought back "+numb2+" "+ani+" to "+SP+". After all that did send us into a worldwide shut down until they were all taken care of.</p> <p> If you do happen to accidently bring those "+adj+" beasts to your home country here’s what, you’ll need to do to solve it. Just know that traditional means of aren’t going to do the trick you’ll have to call "+name2+" the exterminator they’re the key to your survival. They have been trained for "+numb3+" years waiting for this exact moment. They will absolutely "+verb2+" the poor poor vermin that tried to make it into your home country. to contact the exterminator you’ll have to spell their name in a smoke signal.</p> <p> Keep in mind that these vermin are pests because they can also mitotically divide within "+numb4+" hours meaning that if you loose one of them, they will flood and disturb the natural order of "+place+". If this happens the exterminator won’t be enough, you’ll have to call "+name3+" the destroyer of blood lines. They’ve only been training for "+frac+" of the time the exterminator has, but this means nothing to the destroyer as their power is greater than the exterminator. To get a hold of them call  "+cell+" and they’ll be over with in "+numb5+" to "+numb6+" seconds to take care of the problems. Just be safe on your travels and good luck. </p>";
+		
+		document.getElementById('output').innerHTML+=placemessage;
 		
 		
 		}
