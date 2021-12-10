@@ -1,18 +1,101 @@
+
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>Calander</title>
+<title>calendar</title>
 	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 	
 	<style>
 	
-		#parent{position: relative;
-				}
+	#parent{
+		position: relative;
+		 height: 1024px;
+            width:768;
+   
+            background-color: lavender;
+            margin 0px;
+            padding:0px; 
+		background-image: url("images/April.jpg");
+		 background-repeat: no-repeat;
+            background-size: cover;
+			
+		}
 	
-
-	
-	 
+	h1 {text-align: center;
+		color:white;
+		font-family: 'Roboto Mono', monospace;
+		font-size:60px;
+		padding-top:40px;
+		-webkit-text-fill-color: white; 
+  -webkit-text-stroke-width: .75px;
+  -webkit-text-stroke-color: black;
+		}
+		
+		div #week{ padding-left: 300px;
+					padding-top: 50px;
+					font-size: 30px;
+					color:white;
+			-webkit-text-fill-color: white; 
+  -webkit-text-stroke-width: .75px;
+  -webkit-text-stroke-color: black;
+					font-family: 'Roboto Mono', monospace;
+		}
+		div #month{ padding-left: 450px;
+					font-size: 30px;
+					color:white;
+			-webkit-text-fill-color: white; 
+  -webkit-text-stroke-width: .75px;
+  -webkit-text-stroke-color: black;
+					padding-top: 25px;
+					font-family: 'Roboto Mono', monospace;
+		}
+		div #day{padding-left: 610px;
+				font-size: 30px;
+				color:white;
+			-webkit-text-fill-color: white; 
+  -webkit-text-stroke-width: .75px;
+  -webkit-text-stroke-color: black;
+				padding-top: 25px;
+				font-family: 'Roboto Mono', monospace;
+		}
+		div #year{padding-left: 660px;
+					font-size: 30px;
+					color:white;
+			-webkit-text-fill-color: white; 
+  -webkit-text-stroke-width: .75px;
+  -webkit-text-stroke-color: black;
+					padding-top: 25px;
+					font-family: 'Roboto Mono', monospace;	
+		}
+		div #hour{padding-left: 900px;
+				font-size: 30px;
+				padding-top: 25px;
+				color:white;
+			-webkit-text-fill-color: white; 
+  -webkit-text-stroke-width: .75px;
+  -webkit-text-stroke-color: black;
+				font-family: 'Roboto Mono', monospace;
+		}
+		div #min{padding-left: 930px;
+				font-size: 30px;
+				color:white;
+			-webkit-text-fill-color: white; 
+  -webkit-text-stroke-width: .75px;
+  -webkit-text-stroke-color: black;
+				font-family: 'Roboto Mono', monospace;
+		}
+		div #sec{padding-left: 975px;
+				font-size: 30px;
+				color:white;
+			-webkit-text-fill-color: white; 
+  		-webkit-text-stroke-width: .75px;
+  		-webkit-text-stroke-color: black;
+				font-family: 'Roboto Mono', monospace;
+		}
 	
 	
 	</style>
@@ -20,7 +103,10 @@
 
 <body>
 	
+	
+	
 	<div id="parent">
+		<h1> Event Calendar </h1>
 		<div id="week" class="child">week</div>
 		<div id="month" class="child">month</div>
 		<div id="day" class="child">day</div>
@@ -49,7 +135,7 @@
 			var d=new Date();
 			////////////////////////////////////////////////
 			var months= d.getMonth();
-				var months= ["January","February","March","April","May","June","July","Augest","September","October","November","December"];
+				var mon= ["January","February","March","April","May","June","July","Augest","September","October","November","December"];
 			
 			var weeks= d.getDay();
 				var weeks= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
@@ -58,13 +144,12 @@
 			var hour= d.getHours();
 			
 			var minu= d.getMinutes();
-//				var minu= ["00","01","02","03","04","05","06","07","08","09"];
+
 			
 			var sec= d.getSeconds();
-//				var seco= ["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20",];
-			
+
 			///////////////////////////
-			 document.getElementById('month').innerHTML=months[d.getMonth()];
+			 document.getElementById('month').innerHTML=mon[months];
 			 document.getElementById('week').innerHTML=weeks[d.getDay()];
 			document.getElementById('day').innerHTML=d.getDate();
 			document.getElementById('year').innerHTML=d.getFullYear();
@@ -78,6 +163,7 @@
 		}
 			
 		if (sec<10){
+			
 			document.getElementById('sec').innerHTML="0"+sec;
 		}
 			
@@ -91,25 +177,59 @@
 		}
 	
 			
-		if(months==12) {
-			document.body.style.backgroundImage= "url('images/December.jpg')";
+		if(months==11) { 
+			document.getElementById('parent').style.backgroundImage = "url('images/December2.jpg')";
 		}
 			
+			if (months==0) { 
+			document.getElementById('parent').style.backgroundImage = "url('images/January2.jpg')";
+			}
+			
+				if (months==1) { 
+			document.getElementById('parent').style.backgroundImage = "url('images/February2.jpg')";
+				}
+			
+			if (months==2) { 
+			document.getElementById('parent').style.backgroundImage = "url('images/March2.jpg')";
+			}
+			
+			if (months==3) { 
+			document.getElementById('parent').style.backgroundImage = "url('images/April2.jpg')";
+			}
+			
+			if (months==4) { 
+			document.getElementById('parent').style.backgroundImage = "url('images/May2.jpg')";
+			}
+			
+			if (months==5) { 
+			document.getElementById('parent').style.backgroundImage = "url('images/June2.jpg')";
+			}
+			
+			if (months==6) { 
+			document.getElementById('parent').style.backgroundImage = "url('images/July2.jpg')";
+			}
+			
+			if (months==7) { 
+			document.getElementById('parent').style.backgroundImage = "url('images/August2.jpg')";
+			}
+			
+			if (months==8) { 
+			document.getElementById('parent').style.backgroundImage = "url('images/September2.jpg')";
+			}
+			
+			if (months==9) { 
+			document.getElementById('parent').style.backgroundImage = "url('images/October2.jpg')";
+			}
+			
+			if (months==10) { 
+			document.getElementById('parent').style.backgroundImage = "url('images/November2.jpg')";
+			}
+		
+			
 			
 		
 		}
 		
-	
-	
-		
-			
-				
-			
-			
-			
-			
-			
-	
 	
 		calendar();
 	var myInt=setInterval(calendar, 1000);
