@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Calander</title>
+	
+	
+	<style>
+	
+		#parent{position: relative;
+				}
+	
+
+	
+	 
+	
+	
+	</style>
+</head>
+
+<body>
+	
+	<div id="parent">
+		<div id="week" class="child">week</div>
+		<div id="month" class="child">month</div>
+		<div id="day" class="child">day</div>
+		<div id="year" class="child">year</div>
+		<div id="hour" class="child">hour</div>
+		<div id="min" class="child">minute</div>
+		<div id="sec" class="child">second</div>
+		
+	</div>
+	
+	
+	
+	<script>
+		
+		
+		
+		
+	
+		
+		
+		function calendar(){
+			console.log('it works');
+			
+			
+			
+			var d=new Date();
+			////////////////////////////////////////////////
+			var months= d.getMonth();
+				var months= ["January","February","March","April","May","June","July","Augest","September","October","November","December"];
+			
+			var weeks= d.getDay();
+				var weeks= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			
+			var day= d.getDate(); 
+			var hour= d.getHours();
+			
+			var minu= d.getMinutes();
+//				var minu= ["00","01","02","03","04","05","06","07","08","09"];
+			
+			var sec= d.getSeconds();
+//				var seco= ["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20",];
+			
+			///////////////////////////
+			 document.getElementById('month').innerHTML=months[d.getMonth()];
+			 document.getElementById('week').innerHTML=weeks[d.getDay()];
+			document.getElementById('day').innerHTML=d.getDate();
+			document.getElementById('year').innerHTML=d.getFullYear();
+			document.getElementById('hour').innerHTML=d.getHours();
+			document.getElementById('min').innerHTML=d.getMinutes();
+			document.getElementById('sec').innerHTML=d.getSeconds();
+			/////////////////////////
+			
+		if (min<10){
+			document.getElementById('min').innerHTML="0"+min;
+		}
+			
+		if (sec<10){
+			document.getElementById('sec').innerHTML="0"+sec;
+		}
+			
+		if (hour>12){
+			document.getElementById('hour').innerHTML=hour-"12";
+		}
+			
+		if (hour==0){
+			document.getElementById('hour').innerHTML=hour+"12";
+	
+		}
+	
+			
+		if(months==12) {
+			document.body.style.backgroundImage= "url('images/December.jpg')";
+		}
+			
+			
+		
+		}
+		
+	
+	
+		
+			
+				
+			
+			
+			
+			
+			
+	
+	
+		calendar();
+	var myInt=setInterval(calendar, 1000);
+		
+		
+	</script>
+</body>
+</html>
